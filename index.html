@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to my awesome website, where we offer many services">
+    <meta name="keyword" content="Azubi Africa, cloud, data analytics, frontend">
+    <meta charset="UTF-8">
+
+
+    <title>Azubi Africa | Tailor made Cloud Engineering, Front-End Developer and Data Analytics Courses</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/Azubi_logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,200&family=Inter:wght@100;400;900&family=Lexend+Deca&family=Montserrat:wght@500&family=Outfit&family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-- The header section -->
+    <header class="header"> 
+        <div class="container">
+
+             <!-- logo here -->
+            <div class="site_logo">
+                <img src="./images/Azubi_logo.png" alt="">
+            </div>
+
+             <!-- Nav items here -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="#About">About Us</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#contact" class="btn">Contact Us</a></li>
+                </ul>
+            </nav>
+
+             <!-- Menu icon here -->
+            <div class="menu_icon">
+                <i data-feather="menu" onclick="showOverlay()"></i>
+            </div>
+        </div>
+
+         <!-- Overlay here -->
+        <div id="overlay">
+            <nav id="overlay_nav">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#contact" class="btn">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="close_icon">
+                <i data-feather="x" onclick="hideOverlay()"></i>
+            </div>
+        </div>
+
+        
+
+    </header>
+    
+    <section class="hero">
+        <div class="heroline">
+            <div class="container">
+                <h1>Earn yourself the Tech Career that you deserve </h1>
+                <p>More than 23,000 job openings exist for cloud developers and data analysts!</p>
+            </div>
+        </div>
+    </section>
+    <!--  About section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>Why Azubi Africa</h2>
+            <p>People learn best by doing. Our program is not just an endless series of video lessons. It incorporates experiential learning throughout, using interactive labs that put you in control of interesting situations.</p>
+        </div>
+
+    </section>
+    <section class="services">
+        <div class="container">
+            <h2>Why choose us as your trusted 
+                learning partner?</h2>
+                <hr class="custom-hr">
+                <p>We have designed a system that is tailored to your needs</p>
+                <div class="features">
+                    <article class="feature">
+                        <figure>
+                            <img src="./images/Instructor_img.png" alt="Instructor">
+                        </figure>
+                        <h3>Instructor-led classes</h3>
+                        <p>
+                            Classes are led by experienced instructors who are subject matter experts in their field.
+                        </p>
+                        <a href="#" class="btn">Read More</a>
+                        
+                        
+                    </article>
+                    <article class="feature">
+                        <figure>
+                            <img src="./images/Realworldcareer_img.png" alt="Instructor">
+                        </figure>
+                        <h3>Real world Experience</h3>
+                        <p>
+                            Azubi provides learners with the opportunity to apply the skills and knowledge they have learned in a real-world context
+                        </p>
+                        <a href="#" class="btn">Read More</a>
+                        
+                        
+                    </article>
+                    <article class="feature">
+                        <figure>
+                            <img src="./images/Realworld_img.png" alt="Instructor">
+                        </figure>
+                        <h3>Personalized Career Support</h3>
+                        <p>
+                            Personalized career support can help learners to identify their career goals and develop a plan for achieving them
+                        </p>
+                        <a href="#" class="btn">Read More</a>
+                        
+                        
+                    </article>
+                </div>
+        </div>
+    </section>
+
+
+    <script>
+        feather.replace();
+
+        function showOverlay() {
+            document.getElementById("overlay").style.display ="flex";
+        }
+        function hideOverlay() {
+            document.getElementById("overlay").style.display ="none";
+        }
+      </script>
+</body>
+</html>
