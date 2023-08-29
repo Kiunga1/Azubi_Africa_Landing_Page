@@ -5,7 +5,7 @@
     <meta name="description" content="Welcome to my awesome website, where we offer many services">
     <meta name="keyword" content="Azubi Africa, cloud, data analytics, frontend">
     <meta charset="UTF-8">
-
+<link rel="stylesheet" href="./css/contact.css">
 
     <title>Azubi Africa | Tailor made Cloud Engineering, Front-End Developer and Data Analytics Courses</title>
     <script src="https://unpkg.com/feather-icons"></script>
@@ -37,7 +37,7 @@
             </nav>
 
              <!-- Menu icon here -->
-            <div class="menu_icon">
+            <div class="menuicon">
                 <i data-feather="menu" onclick="showOverlay()"></i>
             </div>
         </div>
@@ -55,13 +55,10 @@
                 <i data-feather="x" onclick="hideOverlay()"></i>
             </div>
         </div>
-
-        
-
     </header>
     
     <section class="hero">
-        <div class="heroline">
+        <div class="headline">
             <div class="container">
                 <h1>Earn yourself the Tech Career that you deserve </h1>
                 <p>More than 23,000 job openings exist for cloud developers and data analysts!</p>
@@ -122,6 +119,67 @@
                 </div>
         </div>
     </section>
+     
+    <!-- Contact section-->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="text">
+                <h2>Contact Us</h2>
+                <p>If you have any specific concerns,please feel free to contact us.</p>
+                <p> We welcome any comments, suggestions,feedback, questions, or requests you have.</p>     
+            </div>
+            <form action="" class="form">
+                <p><label for="fullname"><span class="sr-only">Name</span></label>
+                    <input type="text" placeholder="Name" id="fullname"></p>
+                <p>
+                    <label for="email"><span class="sr-only">Email</span></label>
+                    <input type="email" placeholder="Email" id="email">
+                </p>
+                <p>
+                    <label for="message"><span class="sr-only"></span></label>
+                    <textarea name="message" id="message">Message</textarea>
+
+                </p>
+                <p>
+                    <input type="submit" class="btn" >
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer section-->
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <div class="footer_logo">
+                    <img src="./images/Footer_logo.png" alt="Footer logo">
+    
+                </div>
+                <div class="address">
+                    <div class="location-address">
+                       <i data-feather="map-pin"></i>
+                       <div class="test-address">Reiss Jct Rd,</br>
+                        North Legon- Accra - Ghana</div>
+                    </div>
+                    <div class="phone-address">
+                        <i data-feather="phone"></i>
+                        <div class="text-address">123-45-679</div>
+                    </div>
+                </div>
+            </div>
+            <div class="social">
+                <ul class="sns">
+                    <li><a href="#"><i data-feather="twitter" class="icon-social"></i></a></li>
+                    <li><a href="#"><i data-feather="facebook" class="icon-social"></i></a></li>
+                    <li><a href="#"><i data-feather="instagram" class="icon-social"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+
+    
 
 
     <script>
@@ -129,6 +187,8 @@
 
         function showOverlay() {
             document.getElementById("overlay").style.display ="flex";
+            document.getElementById("overlay").classList.add("slide-from-right");
+
         }
         function hideOverlay() {
             document.getElementById("overlay").style.display ="none";
